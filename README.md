@@ -1,4 +1,4 @@
-# Snaking
+# Snaking (Still in development)
 
 A "Snake" game application featuring Artificial Intelligence integration, competitive game modes, and a user management system.
 
