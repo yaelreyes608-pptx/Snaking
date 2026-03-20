@@ -11,8 +11,3 @@ A "Snake" game application featuring Artificial Intelligence integration, compet
     - **Database:** MongoDB.
     - **Deployment:** Heroku.
 
-## Installation Requirements
-1. Clone the repository.
-2. Run `npm install` to install dependencies.
-3. Configure environment variables (`MONGODB_URI`, `PORT`).
-4. Start the application with `npm start`.
