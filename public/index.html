@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snaking</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <section id="login-screen" class="auth-container">
+            <div classs="card">
+                <h1>Snaking</h1>
+                <p>Login to play</p>
+                <form id="login-form">
+                    <input type="text" id="username" placeholder="User" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit" class="btn-primary">Enter</button>
+                </form>
+            </div>
+        </section>
+
+        <main id="game-screen" class="hidden">
+            <header>
+                <div class="scoreboard">
+                    <span>Player 1: <b id="score1">0</b></span>
+                    <span>Player 2: <b id="score2">0</b></span>
+                </div>
+                <div class="control-panel">
+                    <select id="game-mode">
+                        <option value="pvp">Player vs Player (Local)</option>
+                        <option value="pvp">Player vs Player (Online)</option>
+                        <option value="pvia">Plaver vs AI</option>
+                        <option value="aivai">AI vs AI</option>
+                        <option value="scoreboard">Scoreboard</option>
+                    </select>
+                    <button id="star-btn" class="btn-success">Start game</button>
+                </div>
+            </header>
+
+            
+                <p>Controls: P1 = WASD | P2 = ↑←↓→</p>
+            </footer>
+        </main>
+
+        <canvas id="game" width="640" height="640"></canvas>
+        <script src="game.js" type="module"></script>
+        
+    </body>
+</html>
