@@ -9,5 +9,4 @@ A "Snake" game application featuring Artificial Intelligence integration, compet
     - **Frontend:** HTML5 Canvas / JavaScript.
     - **Backend:** Node.js.
     - **Database:** MongoDB.
-    - **Deployment:** Heroku.
-
+    - **Deployment:** Heroku: https://snaking-f27c34bb4a45.herokuapp.com/
