@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    background: #a39d9d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.auth-container {
+    text-align: center;
+    width: 35%;
+    background: #ca7a7a;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    color: #ffffff;
+}
+
+.card input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.auth-container button {
+    width: 60%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.btn-primary { background: #d17171; color: #ffffff; cursor: pointer; }
+.btn-success { background: #d17171; color: #ffffff; cursor: pointer; }
