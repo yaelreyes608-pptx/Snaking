@@ -42,7 +42,7 @@
                     <button onclick="selecmode('single')" class="btn-primary">Singleplayer</button>
                     <button onclick="selecmode('pvp')" class="btn-primary">Player vs Player</button>
                     <button onclick="selecmode('pve')" class="btn-primary">Player vs IA</button>
-                    <button onclick="showScoreboard()" class="btn-primary" style="background-color: #d17171;">Ver Scoreboard</button>
+                    <button onclick="showScoreboard()" class="btn-primary" style="background-color: #d17171;">See scoreboard</button>
                 </div>
             </div>
         </section>
@@ -60,7 +60,7 @@
                         <ol id="top-pve" style="padding-left: 20px;"></ol>
                     </div>
                 </div>
-                <button onclick="backToMenu()" class="btn-primary" style="width: 100%;">Regresar al Menú</button>
+                <button onclick="backToMenu()" class="btn-primary" style="width: 100%;">Return to menu</button>
             </div>
         </section>
 
@@ -71,7 +71,7 @@
                     <span id="p2-score-container" class="hidden"> | Player 2: <b id="score2">0</b></span>
                 </div>
                 <div class="control-panel">
-                    <button onclick="backToMenuFromGame()" class="btn-primary">Abandonar Partida</button>
+                    <button onclick="backToMenuFromGame()" class="btn-primary">Leave match</button>
                 </div>
             </header>
 
@@ -107,7 +107,7 @@
             }
 
             async function showScoreboard() {
-                console.log("Iniciando petición al scoreboard...");
+                console.log("Starting petition to the scoreboard...");
                 modeScreen.classList.add('hidden');
                 scoreboardScreen.classList.remove('hidden');
                 
@@ -115,7 +115,7 @@
                     const res = await fetch('/scoreboard');
                     const data = await res.json();
                     
-                    console.log("Datos del servidor recibidos:", data);
+                    console.log("Server data received: ", data);
                     
                     if (data.success) {
                         const singleList = document.getElementById('top-single');
@@ -135,8 +135,8 @@
                         });
                     }
                 } catch (e) {
-                    console.error("Error al cargar la ruta /scoreboard:", e);
-                    alert("Error al cargar los puntajes. Revisa la consola.");
+                    console.error("Error loading /scoreboard:", e);
+                    alert("Error loading scores");
                 }
             }
 
@@ -164,12 +164,12 @@
                     });
                     const data = await response.json();
                     if (data.success) {
-                        alert("Usuario creado");
+                        alert("User created");
                         toggleAuth();
                     } else {
-                        alert("Error al registrar: " + (data.error || "Intenta con otro nombre"));
+                        alert("Register error" + (data.error || "Try another username"));
                     }
-                } catch (error) { alert("No se pudo conectar."); }
+                } catch (error) { alert("Connecting error"); }
             });
 
             loginForm.addEventListener('submit', async (e) => {
@@ -187,9 +187,9 @@
                         authScreen.classList.add('hidden');
                         modeScreen.classList.remove('hidden');
                     } else {
-                        alert("Usuario o contraseña incorrectos");
+                        alert("Incorrect password or user");
                     }
-                } catch (error) { alert("Error en la conexión."); }
+                } catch (error) { alert("Connection error."); }
             });
         </script>
         
