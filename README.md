@@ -16,4 +16,4 @@
 3. Execute the command "npm install" to download the dependencies.
 4. Create an .env file with you access credentials to your database.
 5. Run the command "node server.js" on the console with the folder open.
-6. Search localhost:3000
+6. Search localhost:3000 on your browser
